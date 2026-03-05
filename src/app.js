@@ -4,6 +4,7 @@ const cors = require('cors');
 const authRoutes = require('./v1/routes/authRoutes');
 
 const dashRoutes = require('./v1/routes/dashRoutes');
+const customerRoutes = require('./v1/routes/customerRoutes');
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(cors());
 app.use('/api/v1/auth', authRoutes);
 
 app.use('/api/v1/dashboard', dashRoutes);
+app.use('/api/v1/customers', customerRoutes);
 
 
 app.listen(3003, () => {
