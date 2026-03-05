@@ -29,7 +29,7 @@ const getCustomerById = async (req, res) => {
     }
 };
 
-// POST create customer (without hashing - use /auth/register for hashed password creation)
+// POST create customer
 const createCustomer = async (req, res) => {
     const { firstName, lastName, email, mobileNumber, password, role } = req.body;
     try {
